@@ -1,0 +1,23 @@
+package com.example.memberlist_201240113;
+
+import java.util.ArrayList;
+
+public class SingleList {
+	private static ArrayList<MemberVO> list;
+	
+	public SingleList(){
+		
+	}
+	
+	
+	public void add(MemberVO mvo){
+		list.add(mvo);
+	};
+	
+	
+	
+	
+	
+	
+	
+}

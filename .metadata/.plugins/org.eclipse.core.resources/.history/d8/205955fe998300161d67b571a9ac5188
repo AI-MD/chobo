@@ -1,0 +1,83 @@
+package android.sample;
+
+
+
+import android.app.Activity;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class UpdateActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.udateview);
+		
+		Intent intent =getIntent();
+		String id=intent.getStringExtra("data_id");
+		String name=intent.getStringExtra("data_name");
+		String city=intent.getStringExtra("data_city");
+		String age=intent.getStringExtra("data_age");
+		
+		
+		System.out.println("»Æ¿Œ" + id);
+		final EditText text1 =(EditText)findViewById(R.id.editText2);
+		final EditText tex2 =(EditText)findViewById(R.id.editText3);
+		final EditText text3 =(EditText)findViewById(R.id.editText4);
+		
+		text1.setText(name);
+		tex2.setText(city);
+		text3.setText(age);
+		
+		Button btn1;
+		Button btn2;
+		btn1 = (Button)findViewById(R.id.button1);
+		btn2 = (Button)findViewById(R.id.button2);
+		btn2.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				//adapter.notifyDataSetChanged();
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(UpdateActivity.this, MainActivity.class);
+				
+				startActivity(intent);
+				
+
+			}
+		});
+		
+		btn1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				SQLiteDatabase sqlitedb2 = openOrCreateDatabase("samples4.db", MODE_PRIVATE, null);
+				
+				
+				
+				
+				
+				text1.getText();	
+				tex2.getText();
+				text3.getText();
+				
+				
+				
+				
+				
+			}
+		});
+		
+		
+	}
+
+	
+	
+}

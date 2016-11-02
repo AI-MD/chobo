@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;android.sample.UserrVO.java&apos; to &apos;MovieVO.java&apos;&#x0D;&#x0A;- Original project: &apos;MovieList_201240113&apos;&#x0D;&#x0A;- Original element: &apos;android.sample.UserrVO.java&apos;&#x0D;&#x0A;- Renamed element: &apos;android.sample.MovieVO.java&apos;" description="Rename compilation unit &apos;UserrVO.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;android.sample{UserrVO.java" name="MovieVO.java" references="false" stamp="1476663779622" version="1.0"/>
+</session>

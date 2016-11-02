@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    >
+    
+ <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        >
+        
+ 	   <TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center"
+    	    android:text="영화 상세정보"  
+    	    android:textSize="20dp"
+    	   />
+    </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content" 
+     android:layout_marginTop="30dp">
+ 
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="영화명 : " />
+
+     <EditText
+         android:id="@+id/editText2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10" />
+ </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+ 	   
+ 	   <TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="개봉일 : "  />
+ 	   
+ 	   <EditText 
+ 	       android:layout_width="match_parent"
+ 	       android:layout_height="wrap_content"
+ 	       android:id="@+id/editText3"/>	   
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+ 	   
+ 	   <TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="상영일수 : "  />
+ 	   
+ 	   <EditText 
+ 	       android:layout_width="match_parent"
+ 	       android:layout_height="wrap_content"
+ 	       android:id="@+id/editText4"/>	   
+    
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+ 	   
+ 	   <TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="상영관 : "  />
+ 	   
+ 	   <EditText 
+ 	       android:layout_width="match_parent"
+ 	       android:layout_height="wrap_content"
+ 	       android:id="@+id/editText5"/>	   
+    
+    </LinearLayout>
+    
+   
+
+     
+<!-- 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+      
+     <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:text="Delete" />
+       
+       -->  
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp" >
+
+      <Button
+          android:id="@+id/button3"
+          android:layout_width="62dp"
+          android:layout_height="wrap_content"
+          android:background="#678"
+          android:textColor="#FFFFFF"
+          android:text="back" />
+
+    </LinearLayout>
+    
+         
+
+     
+</LinearLayout>

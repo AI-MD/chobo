@@ -1,0 +1,24 @@
+
+public class lamdbaTest {
+
+	public static void main(String[] args) {
+		Thread a = new Thread();
+		a.start();
+		Runnable test= new Runnable() {
+			
+			@Override
+			public void run() {
+				System.out.println("test");
+				
+			}
+		};
+		
+		test.run();
+		
+		
+		Runnable test2 =()-> System.out.println("test");
+		test2.run();
+
+	}
+
+}

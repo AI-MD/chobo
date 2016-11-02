@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#244" >
+    <TextView android:id="@+id/ttt"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:textColor="#0F9"
+        android:textSize="10pt"
+        android:text="사용자 목록" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000" >
+
+        <TextView  
+            
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="이름" />
+
+           <TextView
+              
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_marginLeft="64dp"
+              android:layout_toRightOf="@+id/TextView01"
+              android:text="도시" />
+
+          <TextView
+             
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+             android:layout_marginRight="75dp"
+              android:layout_toLeftOf="@+id/TextView04"
+              android:text="나이" />
+
+       
+          
+            <TextView
+              android:id="@+id/TextView04"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:text="학번" />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9B9"
+        android:divider="#000" />
+</LinearLayout>

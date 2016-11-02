@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#244" >
+    <TextView android:id="@+id/ttt"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:textColor="#0F9"
+        android:textSize="10pt"
+        android:text="사용자 목록" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#333" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+            android:text="이름"
+            android:textColor="#0F9" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+             android:layout_alignParentTop="true"
+            android:text="도시"
+            android:textColor="#0F9" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textColor="#0F9" 
+            android:text="나이"
+            
+             android:layout_alignParentRight="true"/>
+            
+        
+     
+     
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="wrap_content"
+        android:layout_height="396dp"
+        android:background="#9B9"
+        android:divider="#000" />
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+   
+   </LinearLayout>
+</LinearLayout>
